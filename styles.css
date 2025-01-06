@@ -863,3 +863,92 @@ transition: background-color 0.3s ease, color 0.3s ease;
         animation-timeline: view();
         animation-range: entry;
     }
+
+    #text-content9 h1{
+    text-align: center;
+    padding: 3% 4%;
+    font-size: 4em;
+    font-weight: 900;
+    color: #da2929;
+    }
+
+    .collapsible {
+        background-color: transparent;
+        color: #ffffff;
+        font-weight: 700;
+        cursor: pointer;
+        padding: 18px;
+        font-size: 2em;
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        width: 100%;
+        transition: background-color 0.7s ease-in-out , color 0.7s ease, border-radius 0.5s ease;
+    }
+    
+    .active, .collapsible:hover {
+        background-color: #741b1b;
+        color: #ffffff;
+        border-radius: 20px;
+      }
+
+      .content {
+        display: none;
+        overflow: hidden;
+        background-color: transparent;
+        font-weight: 400;
+      }
+
+      .content {
+        background-color: transparent;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.9s ease-out;
+        padding-top: 2%;
+        font-size: 1.5em;
+        width: 75%;
+        padding-bottom: 2%;
+        color: white;
+      }
+
+      #section-nine {
+        height: 100%;
+      }
+
+      #buttons-vontainer {
+        padding: 3% 5%;
+      }
+
+      .collapsible img {
+        width: 30px;
+        height: 30px;
+      }
+    
+      #section-nine {
+        background-image: url(Design\ ohne\ Titel\ \(25\).png);
+        background-position: center;
+        background-size: cover;
+        color: white;
+      }
+
+      #button-vontainer {
+        color: white;
+      }
+
+      #nine-content {
+        backdrop-filter: blur(10px);
+      } 
+
+      .button-content {
+        border-bottom: 1px solid rgb(255, 255, 255);
+        width: 75%;
+      }
+
+      @keyframes leRotateIn {
+        from {
+            transform: rotate(-180deg);
+            opacity: 0;
+        }
+        to { opacity: 1 }
+    }
