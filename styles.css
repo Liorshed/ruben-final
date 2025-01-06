@@ -79,13 +79,9 @@ ul {
 /* content */
 
 #second-sectiontext {
-    position: absolute;
-    right: 5%;
-    top: 30%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.7em;
     z-index: 10000;
-
 }
 #second-sectiontext h1 {
     font-size: 3em;
@@ -99,23 +95,90 @@ ul {
     -moz-box-shadow: 12px 7px 41px 6px rgba(0,0,0,0.52);
     border-radius: 60px;
 }
-
 #ruben-img-container {
-    position: absolute;
-    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
     left: 10%;
+}
+#second-sectiontext {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+
 }
 
 #second-sectiontext h2 {
     font-size: 1.99em;
 }
+#content-opening-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15%;
+}
+#opening-section {
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+    background-image: url(Design\ ohne\ Titel\ \(3\).png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
 
 #second-section {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(Design\ ohne\ Titel\ \(3\).png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+#ruben-section {
+    width: 400px;
+    height: 550px;
+}
+#textdiv-openingsection {
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textdiv-openingsection h1 {
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+#textdiv-openingsection h2 {
+    font-size: 3em;
+}
+
+#textdiv-openingsection h4 {
+    font-size: 1.5em;
+}
+
+#textdiv-openingsection a {
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 2% 5%;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#textdiv-openingsection a:hover {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    transform: 0.3s ease-in-out;
+}
+/* end */
 #third-section {
     padding: 2% 5%;
 }
@@ -783,6 +846,20 @@ transition: background-color 0.3s ease, color 0.3s ease;
 
     .div-box-class {
         animation: leFadeInBottom 4s ease-out;
+        animation-timeline: view();
+        animation-range: entry;
+    }
+
+    @keyframes leBlurInTop {
+        from {
+            transform: scaleY(0.2) translateY(-100px);
+            filter: blur(20px);
+            opacity: 0;
+        }
+    }
+
+    #text-div-thirdsection {
+        animation: leBlurInTop 4s forwards;
         animation-timeline: view();
         animation-range: entry;
     }
