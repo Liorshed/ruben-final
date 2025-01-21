@@ -53,6 +53,7 @@ li a {
     backdrop-filter: blur(5px);
     font-size: 1.1em;
     color: white;
+    margin: 0 auto;
 }
 
 ul {
@@ -382,6 +383,8 @@ span {
 #section-five {
     height: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 50px;
+    margin-bottom: 20px;
 }
 
 #content-5 {
@@ -871,7 +874,7 @@ transition: background-color 0.3s ease, color 0.3s ease;
     font-weight: 900;
     color: #da2929;
     }
-
+/*
     .collapsible {
         background-color: transparent;
         color: #ffffff;
@@ -952,3 +955,164 @@ transition: background-color 0.3s ease, color 0.3s ease;
         }
         to { opacity: 1 }
     }
+        */
+
+        @import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,700");
+        *, *::after, *::before{
+          margin: 0;
+          padding: 0;
+          box-sizing:border-box;
+        }
+        div.c{
+          position: relative;
+        }
+        .c input{
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          opacity:0;
+          visibility: 0;
+        }
+        h5{
+          background:rgb(255, 255, 255);
+          border-radius: 20px;
+          color:rgb(0, 0, 0);
+          padding:1em;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-weight: 900;
+                }
+        div.p{
+          max-height:0px;
+          overflow: hidden;
+          transition:max-height 0.5s;
+          background-color: rgb(73, 83, 176);
+          box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.2);
+          border-radius: 20px;
+          color: white;
+        }
+        div.p p {
+            padding:2em;
+        }
+        input:checked ~ h1 label::before{
+          border-left:15px solid transparent;
+          border-top:20px solid rgb(231, 231, 231);
+        }
+        input:checked ~ h5 ~ div.p{
+          max-height:150px;
+        }
+        .arrowing {
+            cursor: pointer;
+        }
+
+        .c {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            align-content: center;
+        }
+
+        #section-nine {
+            background-image: url(Design\ ohne\ Titel\ \(25\).png);
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+        }
+
+        #section9boxes {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .c {
+            padding: 0.70%;
+            transform: transition 1s ease;
+        }
+
+        .c:hover{
+            transition: translateY(-15px);
+        }
+        .c h5{
+            font-size: 1.56em;
+        }
+
+        #contact-section-title {
+            text-align: center;
+            padding: 5%;
+            font-size: 4em;
+            color: #da2929;
+        }
+        #contact-section-p {
+            text-align: center;
+            padding: 5%;
+            font-size: 2em;
+            color: #da2929;
+            font-weight: 600;
+        }
+
+        #input-contact-div {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 5%;
+        }
+
+        .contact-me {
+            width: 20%;
+            height: 50px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 1em;
+            color: black;
+        }
+
+        #contact-section{
+            height: 100%;
+            background-image: url(Design\ ohne\ Titel\ \(26\).png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        #container-anchor {
+            text-align: center;
+            padding-top: 2%;
+        }
+
+        #container-anchor a {
+            text-decoration: none;
+            color: black;
+            border: 2px solid black;
+            border-radius: 30px;
+            padding: 20px; 
+        }
+
+        #last-section-title {
+            text-align: center;
+            padding: 2% 5%;
+            font-size: 4em;
+            font-weight: 850;
+            color: rgb(27, 91, 175);
+        }
+
+        #last-secrion-paragraph {
+            padding: 1% 5%;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+
+        .sections {
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+
+        #text-div-sec5 {
+            border-radius: 50px;
+            margin-top: 20px;
+        }
