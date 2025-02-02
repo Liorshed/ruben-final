@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -1107,12 +1108,60 @@ transition: background-color 0.3s ease, color 0.3s ease;
             font-size: 1.5em;
         }
 
-        .sections {
-            border-radius: 50px;
-            margin-top: 20px;
-        }
 
         #text-div-sec5 {
             border-radius: 50px;
             margin-top: 20px;
+
         }
+        .journey-div-inner h1{
+            font-size: 3em;
+            color: rgb(60, 60, 157);
+        }
+        .journey-div-inner p{
+            font-size: 1em;
+            color: rgb(255, 255, 255);
+        }
+
+        .journey-div-inner h2 {
+            font-size: 4em;
+            color: #da2929;
+        }
+
+        .title-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .title-container h2 {
+            font-size: 6em;
+            color: #4a4a8b;
+        }
+
+        .title-container h1 {
+            font-size: 1em;
+        }
+
+        /* NOTES 
+*פודקאסט קו מנצח
+        קצת עליי: 
+
+
+        צבעי דגל אדום לבן כחול
+
+         לצמצם ספייסים בין שורות
+
+        להמחיש את הכפתור בבית בצורה יותר מקצועית
+        
+
+        פחות רווח בפתרון
+        לשפר עיצובית
+
+        להקטין משמעותית תהליך
+        צבעים של רובן
+
+        למספר שירותים שתקבלו ממני 
+        
+        1-4
+
+        לשפר כיתוב ואיכות פונט
