@@ -52,7 +52,7 @@ li a {
     position: fixed;
     z-index: 20000;
     backdrop-filter: blur(5px);
-    font-size: 1.1em;
+    font-size: 0.9em;
     color: white;
     margin: 0 auto;
 }
@@ -1142,6 +1142,32 @@ transition: background-color 0.3s ease, color 0.3s ease;
             font-size: 1em;
         }
 
+
+        #sec4-nested4 {
+            color: #da2929;
+        }
+
+
+        #sec4-nested2 {
+            color: #da2929;
+        }
+
+        #textdiv-openingsection h1 {
+            color: #da2929;
+        }
+
+
+        #textdiv-openingsection h2 {
+            color: rgb(83, 83, 222);
+        }
+
+        #sixth-sec {
+            margin: 0;
+        }
+
+        #section-five {
+            margin: 0;
+        }
         /* NOTES 
 *פודקאסט קו מנצח
         קצת עליי: 
