@@ -1273,7 +1273,7 @@ padding: 10px;
 }
 
 #blue-08-02 {
-    color: rgb(61, 61, 163);
+    color: rgb(212, 75, 75);
 }
 
 .div-box-class:hover {
@@ -1283,7 +1283,7 @@ padding: 10px;
 #section-four-text-r {
     font-weight: 700;
     font-size: 1.200em;
-    background-color: white;
+    background-color: rgba(81, 113, 202, 0.326);
     border-left: 2px black solid;
 }
 
