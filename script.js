@@ -39,3 +39,72 @@ box.classList.content('opened');
     openingButton.style.color = 'black'
   } 
 })
+
+window.onload = function () {
+  let element = document.getElementById("section-four-text-r");
+  element.classList.remove("animated"); // Reset animation
+  void element.offsetWidth; // Trigger reflow to restart animation
+  element.classList.add("animated"); // Reapply animation
+};
+
+let observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+          entry.target.classList.add("animated");
+      }
+  });
+});
+
+document.querySelectorAll("#text-div-thirdsection").forEach(el => observer.observe(el));
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  let animatedElements = document.querySelectorAll("#text-div-thirdsection");
+
+
+
+  function checkVisibility() {
+
+      animatedElements.forEach(el => {
+
+          let rect = el.getBoundingClientRect();
+
+          let isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
+
+
+
+          if (isVisible && !el.classList.contains("show")) {
+
+              el.classList.add("show");
+
+              sessionStorage.setItem(el.id, "played"); // Store in session storage
+
+          }
+
+      });
+
+  }
+
+
+
+  // Check stored animations and apply immediately
+
+  animatedElements.forEach(el => {
+
+      if (sessionStorage.getItem(el.id)) {
+
+          el.classList.add("show");
+
+      }
+
+  });
+
+
+
+  window.addEventListener("scroll", checkVisibility);
+
+  checkVisibility(); // Initial check on load
+
+});
