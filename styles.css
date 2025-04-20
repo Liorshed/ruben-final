@@ -90,12 +90,12 @@ ul {
 }
 
 #ruben-img-container img {
-    height: 550px;
-    width: 420px;
+    height: auto; /* Remove fixed height */
+    width: 100%; /* Make it responsive */
     box-shadow: 12px 7px 41px 6px rgba(0,0,0,0.52);
     -webkit-box-shadow: 12px 7px 41px 6px rgba(0,0,0,0.52);
     -moz-box-shadow: 12px 7px 41px 6px rgba(0,0,0,0.52);
-    border-radius: 60px;
+    border-radius: 20px; /* Adjust as needed */
 }
 #ruben-img-container {
     display: flex;
@@ -1300,26 +1300,116 @@ font-weight: 700;
     color: #4a4a8b;
 }
 
-        /* NOTES 
-*פודקאסט קו מנצח
-        קצת עליי: 
+/* General Image Adjustments */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures images maintain their aspect ratio */
+}
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* General adjustments */
+    body {
+        font-size: 14px;
+    }
 
-        צבעי דגל אדום לבן כחול
+    #heading-section {
+        flex-direction: column;
+        padding: 5%;
+        font-size: 0.8em;
+    }
 
-         לצמצם ספייסים בין שורות
+    ul {
+        flex-direction: column;
+        gap: 1em;
+    }
 
-        להמחיש את הכפתור בבית בצורה יותר מקצועית
-        
+    #socials {
+        gap: 2em;
+    }
 
-        פחות רווח בפתרון
-        לשפר עיצובית
+    #content-opening-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    }
 
-        להקטין משמעותית תהליך
-        צבעים של רובן
+    #second-sectiontext {
+        width: 100%;
+        text-align: center;
+    }
 
-        למספר שירותים שתקבלו ממני 
-        
-        1-4
+    #ruben-img-container img {
+        width: 90%; /* Slightly smaller width for better fit */
+        height: auto;
+        margin: 0 auto; /* Center the image */
+        border-radius: 15px; /* Slightly rounded corners */
+    }
 
-        לשפר כיתוב ואיכות פונט
+    #third-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 5%;
+    }
+
+    #third-section-image img {
+        width: 100%; /* Full width for smaller screens */
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    #section-four-text {
+        padding: 10%;
+        text-align: center;
+    }
+
+    #section-four img {
+        width: 100%; /* Full width for smaller screens */
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    #content-5 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 5%;
+    }
+
+    #img-5-div img {
+        width: 100%; /* Full width for smaller screens */
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    #image-bout img {
+        width: 100%; /* Ensure it scales properly */
+        height: auto;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    #solutions {
+        gap: 50px;
+    }
+
+    #three-box-div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #contact-section {
+        padding: 5%;
+    }
+
+    #input-contact-div {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
