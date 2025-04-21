@@ -519,6 +519,8 @@ border-radius: 60px;
     border-radius: 30px;
 }
 
+
+
 .journey-div-inner h1 {
     font-size: 4.5em;
     color: rgb(255, 0, 170);
@@ -1310,45 +1312,52 @@ img {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    /* General adjustments */
-    body {
-        font-size: 14px;
-    }
-
-    #heading-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    #socials {
-        flex-direction: row;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    #content-opening-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 5%;
-    }
-
-    #second-sectiontext {
-        width: 100%;
-        text-align: center;
-    }
-
+    /* Ruben Image Container */
     #ruben-img-container img {
         width: 95%; /* Adjust width for smaller screens */
         height: auto;
         margin: 0 auto; /* Center the image */
         border-radius: 10px; /* Slightly rounded corners */
+    }
+
+    /* Third Section Images */
+    #third-section-image img {
+        width: 90%; /* Reduce width for better fit */
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    /* Section 5 Images */
+    #img-5-div img {
+        width: 90%; /* Adjust for smaller screens */
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    /* Image Bout Section */
+    #image-bout img {
+        width: 90%; /* Ensure it scales properly */
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    /* Section Four Images */
+    #section-four img {
+        width: 90%; /* Full width for smaller screens */
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    /* Adjustments for Containers */
+    #content-opening-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
     }
 
     #third-section {
@@ -1358,47 +1367,15 @@ img {
         padding: 5%;
     }
 
-    #third-section-image img {
-        width: 90%; /* Reduce width for better fit */
-        height: auto;
-        margin: 0 auto;
-        border-radius: 10px;
-    }
-
     #section-four-text {
         padding: 5%;
         text-align: center;
-    }
-
-    #section-four img {
-        width: 90%; /* Full width for smaller screens */
-        height: auto;
-        margin: 0 auto;
-        border-radius: 10px;
     }
 
     #content-5 {
         flex-direction: column;
         gap: 15px;
         padding: 5%;
-    }
-
-    #img-5-div img {
-        width: 90%; /* Adjust for smaller screens */
-        height: auto;
-        margin: 0 auto;
-        border-radius: 10px;
-    }
-
-    #image-bout img {
-        width: 90%; /* Ensure it scales properly */
-        height: auto;
-        margin: 0 auto;
-        border-radius: 10px;
-    }
-
-    #solutions {
-        gap: 50px;
     }
 
     #three-box-div {
@@ -1414,4 +1391,40 @@ img {
         flex-direction: column;
         gap: 15px;
     }
+
+    /* Social Media Icons */
+    #socials {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Navbar Adjustments */
+    #heading-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 769px){
+#third-section-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#img-5-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300%;
+    height: 200%;
+}
 }
