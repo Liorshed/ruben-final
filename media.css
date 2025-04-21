@@ -238,4 +238,24 @@
 @media (max-width: 768px) {
  .topnav {
     display: none; }
+
+    #heading-section ul{
+        display: none;
+    }
+
+    #text-content9 {
+        font-size: 0.5em;
+    }
+
+    #section9boxes {
+        font-size: 0.5em;
+    }
+
+    .c h5 {
+        font-size: 0.5em;
+    }
+ }
+
+ * {
+    overflow-x: hidden;
  }

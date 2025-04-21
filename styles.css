@@ -1380,6 +1380,9 @@ img {
         margin: 0 auto; /* Center the image */
         border-radius: 10px; /* Slightly rounded corners */
     }
+    #heading-section {
+        display: none;
+    }
     #sec8-title {
         font-size: 3em; /* Adjust font size for smaller screens */
     }
@@ -1601,12 +1604,32 @@ img {
         flex-direction: column;
         gap: 15px;
     }
+
+    #heading-section {
+        display: none;
+    }
    }
 
  
 
-#heading-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+   @media (max-width: 768px) {
+    .topnav {
+       display: none; }
+   
+       #heading-section ul{
+           display: none;
+       }
+   
+       #text-content9 {
+           font-size: 0.9em;
+       }
+       #section9boxes {
+        font-size: 0.68em;
+    }
+
+    .c h5 {
+        font-size: 1em;
+    }
+    }
+   
+
