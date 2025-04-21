@@ -1391,6 +1391,10 @@ img {
         border-radius: 10px;
     }
 
+    #heading-section {
+        display: none;
+    }
+
     #section-four2 {
         display: none;
     }
