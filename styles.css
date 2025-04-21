@@ -1596,10 +1596,14 @@ img {
     #last-secrion-paragraph {
         font-size: 1.2em;
     }
+
+    #three-box-div {
+        flex-direction: column;
+        gap: 15px;
+    }
    }
 
  
-}
 
 #heading-section {
     display: flex;
