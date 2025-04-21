@@ -1391,6 +1391,10 @@ img {
         border-radius: 10px;
     }
 
+    #section-four2 {
+        display: none;
+    }
+
     /* Section 5 Images */
     #img-5-div img {
         width: 90%; /* Adjust for smaller screens */
