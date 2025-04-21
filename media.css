@@ -234,3 +234,8 @@
     font-weight: 800;
     color: white;
 }
+
+@media (max-width: 768px) {
+ .topnav {
+    display: none; }
+ }
