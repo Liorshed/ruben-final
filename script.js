@@ -113,3 +113,86 @@ document.getElementById('menu-toggle').addEventListener('click', function () {
     const menu = document.getElementById('mobile-menu');
     menu.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.mobile-nav');
+  const overlay = document.querySelector('.overlay');
+  const body = document.body;
+  
+  menuToggle.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.classList.toggle('active');
+      this.setAttribute('aria-expanded', !isExpanded);
+      nav.classList.toggle('active');
+      overlay.style.display = isExpanded ? 'none' : 'block';
+      body.style.overflow = isExpanded ? 'auto' : 'hidden';
+  });
+  
+  // Close menu when clicking overlay
+  overlay.addEventListener('click', function() {
+      menuToggle.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      nav.classList.remove('active');
+      this.style.display = 'none';
+      body.style.overflow = 'auto';
+  });
+  
+  // Close menu when clicking a link
+  const navLinks = document.querySelectorAll('.mobile-nav a');
+  navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+          menuToggle.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          nav.classList.remove('active');
+          overlay.style.display = 'none';
+          body.style.overflow = 'auto';
+      });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.mobile-nav');
+  const overlay = document.querySelector('.overlay');
+  const body = document.body;
+  
+  menuToggle.addEventListener('click', function() {
+      // Toggle active class on menu toggle
+      this.classList.toggle('active');
+      
+      // Toggle aria-expanded attribute
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+      
+      // Toggle nav menu
+      nav.classList.toggle('active');
+      
+      // Toggle overlay
+      overlay.style.display = isExpanded ? 'none' : 'block';
+      
+      // Toggle body scroll
+      body.style.overflow = isExpanded ? 'auto' : 'hidden';
+  });
+  
+  // Close menu when clicking overlay
+  overlay.addEventListener('click', function() {
+      menuToggle.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      nav.classList.remove('active');
+      this.style.display = 'none';
+      body.style.overflow = 'auto';
+  });
+  
+  // Close menu when clicking a link
+  const navLinks = document.querySelectorAll('.mobile-nav a');
+  navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+          menuToggle.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          nav.classList.remove('active');
+          overlay.style.display = 'none';
+          body.style.overflow = 'auto';
+      });
+  });
+});
