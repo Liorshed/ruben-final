@@ -1479,8 +1479,7 @@ display: flex;
 @media (min-width: 769px){
 #third-section-image {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justn-items: center;
     width: 100%;
 }
 

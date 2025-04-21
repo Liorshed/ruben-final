@@ -108,3 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
   checkVisibility(); // Initial check on load
 
 });
+
+document.getElementById('menu-toggle').addEventListener('click', function () {
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
+});
