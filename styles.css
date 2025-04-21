@@ -1380,7 +1380,9 @@ img {
         margin: 0 auto; /* Center the image */
         border-radius: 10px; /* Slightly rounded corners */
     }
-
+    #sec8-title {
+        font-size: 3em; /* Adjust font size for smaller screens */
+    }
     /* Third Section Images */
     #third-section-image img {
         width: 90%; /* Reduce width for better fit */
@@ -1471,23 +1473,7 @@ img {
         flex-direction: column;
         gap: 10px;
     }
+ 
 }
 
-#section-four-2 {
-display: flex;
-}
-@media (min-width: 769px){
-#third-section-image {
-    display: flex;
-    justn-items: center;
-    width: 100%;
-}
 
-#img-5-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300%;
-    height: 200%;
-}
-}

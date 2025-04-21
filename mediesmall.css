@@ -1,0 +1,280 @@
+/* Mobile CSS */
+@media only screen and (max-width: 768px) {
+    /* Base styles */
+    body {
+        overflow-x: hidden;
+    }
+    
+    /* Navigation */
+    #navbar-head {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 1000;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    #navbar-head ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navli, .navliw {
+        margin: 5px;
+    }
+    
+    #navbar-head a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    
+    /* Social icons */
+    #socials {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+    
+    #socials img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+    }
+    
+    /* Opening section */
+    #opening-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    #content-opening-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    #img-div-openingsection {
+        margin-bottom: 20px;
+    }
+    
+    #ruben-section {
+        max-width: 250px;
+        height: auto;
+    }
+    
+    #textdiv-openingsection h1 {
+        font-size: 28px;
+    }
+    
+    #textdiv-openingsection h2 {
+        font-size: 22px;
+    }
+    
+    #textdiv-openingsection a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    /* Third section */
+    #third-section {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+    
+    #third-section-image {
+        margin-bottom: 20px;
+    }
+    
+    #third-section-image img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #text-div-thirdsection {
+        padding: 0;
+    }
+    
+    #text-div-thirdsection h1 {
+        font-size: 24px;
+    }
+    
+    #text-div-thirdsection p {
+        font-size: 16px;
+    }
+    
+    /* Section four */
+    #section-four2 {
+        flex-direction: column;
+        padding: 30px 15px;
+    }
+    
+    #image-bout {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    #image-bout img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #section-four-text-r {
+        padding: 0;
+    }
+    
+    #section-four-text-r h2 {
+        font-size: 24px;
+    }
+    
+    #blue-08, #blue-08-02 {
+        font-size: 18px;
+    }
+    
+    /* Section five */
+    #section-five {
+        padding: 30px 15px;
+    }
+    
+    #content-5 {
+        flex-direction: column;
+    }
+    
+    #img-5-div {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    #img-5-div img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    #text-div-sec5 h1 {
+        font-size: 24px;
+    }
+    
+    /* Sixth section */
+    #sixth-sec {
+        padding: 30px 15px;
+    }
+    
+    #content-6th h1 {
+        font-size: 24px;
+    }
+    
+    .soloution-c {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .soloution-c h1 {
+        font-size: 20px;
+    }
+    
+    #h2-endof6 {
+        font-size: 18px;
+    }
+    
+    /* Seventh section */
+    #seventh-sec {
+        padding: 30px 15px;
+    }
+    
+    #journey-div {
+        flex-direction: column;
+    }
+    
+    .journey-div-inner {
+        margin-bottom: 30px;
+    }
+    
+    .sec6-img {
+        transform: rotate(90deg);
+        margin: 10px auto;
+    }
+    
+    #sec7-lasth1 {
+        font-size: 18px;
+    }
+    
+    /* Section eight */
+    #section-eight {
+        padding: 30px 15px;
+    }
+    
+    #three-box-div {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .div-box-class {
+        padding: 20px;
+    }
+    
+    .title-container h1 {
+        font-size: 20px;
+    }
+    
+    /* Section nine */
+    #section-nine {
+        padding: 30px 15px;
+    }
+    
+    #text-content9 h1 {
+        font-size: 24px;
+    }
+    
+    .c {
+        margin-bottom: 15px;
+    }
+    
+    .c h5 {
+        font-size: 18px;
+    }
+    
+    /* Last section */
+    #last-section {
+        padding: 30px 15px;
+    }
+    
+    #last-section-title {
+        font-size: 24px;
+    }
+    
+    /* General adjustments */
+    .sections {
+        padding: 30px 15px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    a {
+        font-size: 14px;
+    }
+    
+    /* Hide scroll watcher on mobile if not needed */
+    .scrollwatcher {
+        display: none;
+    }
+}
