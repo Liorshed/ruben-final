@@ -1572,10 +1572,8 @@ img {
         gap: 15px;
         padding: 5%;
     }
-
-    ul {
+   #three-box-div {
         flex-direction: column;
-        gap: 10px;
         gap: 15px;
     }
 
