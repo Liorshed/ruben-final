@@ -1631,5 +1631,61 @@ img {
         font-size: 1em;
     }
     }
-   
+
+#lead-form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#lead-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+#lead-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#lead-form label {
+    text-align: right;
+    font-size: 1em;
+    color: #555;
+}
+
+#lead-form input,
+#lead-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#lead-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#lead-form button:hover {
+    background-color: #45a049;
+}
+
+
 

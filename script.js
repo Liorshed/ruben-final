@@ -213,3 +213,10 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+document.getElementById('lead-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // מונע את שליחת הטופס כברירת מחדל
+    alert('תודה! הפרטים שלך נשלחו בהצלחה.');
+    this.reset(); // מאפס את הטופס
+});
+

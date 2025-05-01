@@ -14,7 +14,6 @@
 <body style="overflow-x: hidden;">
     <div class="scrollwatcher"></div>
     <section id="heading-section" >
-        
         <nav id="navbar-head">
             <ul>
                 <li class="navli" id="li1"><a href="#" id="li-a1" class="navbar-o">בית</a></li>
@@ -335,6 +334,25 @@
 
     </div>
    </section>
+
+   <div id="lead-form-container">
+    <h2>השאירו פרטים ואחזור אליכם</h2>
+    <form id="lead-form" action="https://formspree.io/f/xwpolejr" method="POST">
+        <label for="name">שם מלא:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">אימייל:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">טלפון:</label>
+        <input type="tel" id="phone" name="phone"  required>
+
+        <label for="message">הודעה:</label>
+        <textarea id="message" name="message" placeholder="כתוב הודעה..." rows="4"></textarea>
+
+        <button type="submit">שלח</button>
+    </form>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
