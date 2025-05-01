@@ -254,6 +254,9 @@
     .c h5 {
         font-size: 0.5em;
     }
+    #section9boxes .p {
+        padding: 10%;
+    }
  }
 
  * {

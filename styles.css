@@ -1630,6 +1630,27 @@ img {
     .c h5 {
         font-size: 1em;
     }
+    #content-6th {
+        font-size: 1.2em;
+    }
+
+    .soloution-c {
+        font-size: 0.8em;
+        padding: 15%;
+    }
+
+    #h2-endof6 {
+        font-size: 1em;
+    }
+
+    #text-content9 {
+        font-size: 0.5em;
+    }
+    #section9boxes .p {
+        font-size: 0.8em;
+    }
+    #section-five {
+        font-size: 0.7em;
     }
 
 #lead-form-container {
@@ -1688,4 +1709,12 @@ img {
 }
 
 
-
+@media (min-width: 768px) {
+    #lead-form-container {
+        width: 80%;
+    }
+    #img-5-div img {
+        display: none;
+    }
+}
+}
